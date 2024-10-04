@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.neon-border {
+  box-shadow: 0 0 5px #ff11006e, 0 0 10px #ff48009f, 0 0 20px #00ccff7c, 0 0 40px #fbff00a8;
+}
+
+@keyframes colorPulse {
+  0% {
+    color: #b3ffb3; /* lighten(green, 70%) */
+  }
+  40% {
+    color: #00ff00; /* green */
+  }
+  50% {
+    color: #00e600; /* darken(green, 5%) */
+  }
+  100% {
+    color: #00b300; /* darken(green, 20%) */
+  }
+}
+
+:root {
+  --main-bg-color: #000;
+  --main-text-color: #00b300; /* darken(green, 20%) */
+  --font-size: 1em;
+  --font-family: 'Source Code Pro', monospace;
+}
+
+.codematrix {
+  @apply flex items-center justify-center bg-black h-screen m-0 overflow-hidden;
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
+
+.wrapper {
+  @apply flex h-9  overflow-hidden text-center;
+}
+
+.column > * {
+  @apply block;
+  animation: colorPulse 3s infinite;
+  padding: 0 0.125em;
+}
