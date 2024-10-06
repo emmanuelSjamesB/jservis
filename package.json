@@ -1,12 +1,12 @@
 {
   "name": "proyecto",
   "private": true,
-  "homepage": "httpS://emmanuelsjamesb.store",
+  "homepage": "https://emmanuelsjamesb.store",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build && echo emmanuelsjamesb.store > ./build/CNAME",
-    "deploy": "gh-page -d build",
+    "predeploy": "npm run build && echo emmanuelsjamesb.store > ./dist/CNAME",
+    "deploy": "gh-page -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
