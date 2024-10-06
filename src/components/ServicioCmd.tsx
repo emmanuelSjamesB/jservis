@@ -1,8 +1,5 @@
 import React from 'react';
 
-
-
-
 const ServicesSection: React.FC = () => {
   return (
     <section id="services" className=" flex items-center justify-center h-screen bg-black w-full ">

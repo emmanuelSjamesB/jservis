@@ -16,10 +16,10 @@ const ContactForm: React.FC = () => {
     if (form.current) {
       emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_FORM, form.current)
         .then(() => {
-          //console.log('SUCCESS!');
+          
           alert('Correo enviado exitosamente');
-        }, (error) => {
-          //console.log('FAILED...', error);
+        }, (_error) => {
+          
           alert('Error al enviar el correo');
         });
     }

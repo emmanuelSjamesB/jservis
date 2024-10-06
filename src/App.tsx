@@ -2,7 +2,6 @@ import './App.css';
 
 import React from 'react';
 import Navbar from './components/NavCmd';
-import ContactForm from './components/ContactForm';
 import Header from './components/HeaderCmd';
 import ServicesSection from './components/ServicioCmd';
 import AboutSection from './components/AboutCmd';
