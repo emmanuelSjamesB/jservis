@@ -26,11 +26,11 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-16 bg-black w-full font-sans">
+    <section id="contact" className="py-16 bg-black w-screen font-sans">
         <div className="container mx-auto text-center">
           
     <form ref={form} onSubmit={sendEmail} className="max-w-md mx-auto bg-black text-green-500 p-8 rounded shadow-lg font-mono">
-    <h2 className="text-6xl font-bold mb-6 font-sans">Contáctanos</h2>
+    <h2 className="text-3xl font-bold mb-6 font-sans">Contáctanos</h2>
       <input type="hidden" name="contact_number" value="697483" />
       <div className="mb-4">
         <label className="block  text-green-500 text-sm font-bold mb-2">Nombre</label>

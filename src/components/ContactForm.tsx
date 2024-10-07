@@ -12,10 +12,10 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-16 bg-black w-full font-sans">
+    <section id="contact" className="py-16 bg-black w-screen font-sans">
         <div className="container mx-auto text-center">
     <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-black text-green-500 p-8 rounded shadow-lg font-mono">
-      <h2 className="text-6xl font-bold mb-6 font-sans">Contáctanos</h2>
+      <h2 className="text-3xl font-bold mb-6 font-sans">Contáctanos</h2>
       <div className="mb-4">
         <label htmlFor="email" className="block text-green-500">Correo Electrónico</label>
         <input

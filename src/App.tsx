@@ -7,7 +7,7 @@ import ServicesSection from './components/ServicioCmd';
 import AboutSection from './components/AboutCmd';
 import VideoHeader from './components/VideoHeader';
 import GaleriaCmd from './components/GaleriaCmd';
-import CodeMatrix from './components/CodeMatrix';
+
 import Formulario from './components/Formulario';
 import SocialBar from './components/SocialBar';
 
@@ -24,7 +24,7 @@ const App: React.FC = () => {
       <GaleriaCmd />     
       <Formulario />
       <SocialBar /> 
-      <CodeMatrix />
+      
          
     </>
   );

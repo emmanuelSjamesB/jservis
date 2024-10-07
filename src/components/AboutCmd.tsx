@@ -18,9 +18,9 @@ const AboutSection: React.FC = () => {
   }, []);
 //  Somos un equipo de profesionales dedicados a 
   return (
-    <section id="about" className="py-16 w-full bg-black text-green-500">
+    <section id="about" className="py-16 w-screen bg-black text-green-500">
       <div className="container mx-auto text-center">
-        <h2 className="text-6xl font-bold mb-8 font-ibm">Sobre Nosotros</h2>
+        <h2 className="text-3xl font-bold mb-8 font-ibm">Sobre Nosotros</h2>
         <div className="text-lg flex justify-center items-center">
           <p className="inline-block font-mono">
           
