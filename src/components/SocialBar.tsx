@@ -5,7 +5,7 @@ const whatsapp = import.meta.env.VITE_WHATSAPP;
 const facebook = import.meta.env.VITE_FACEBOOK;
 const SocialBar = () => {
     return(
-        <div className="flex justify-center space-x-8 pb-6 bg-black">
+        <div className="flex justify-center space-x-8 pb-6 bg-black ">
             <a href= {whatsapp}
             target="_blank"
             rel="noopener noreferrer"
