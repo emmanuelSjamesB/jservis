@@ -3,18 +3,18 @@ import video from '../assets/video.mp4';
 
 const VideoHeader: React.FC = () => {
   return (
-    <header className="relative flex items-center justify-center h-screen  overflow-hidden bg-black">
-      <div className="relative z-30 p-5 text-3xl font-bold mb-8 text-center text-black bg-purple-300 bg-opacity-50 rounded-xl">
+    <header className="relative flex items-center justify-center h-screen overflow-hidden bg-black w-full">
+      <div className="relative  p-5 text-3xl font-bold mb-8 text-center text-black bg-purple-300 bg-opacity-50 rounded-xl">
         Reparación y optimización
       </div>
       <video
         autoPlay
         loop
         muted
-        className="absolute z-0 w-auto min-w-full min-h-full max-w-none sm:w-full md:w-1/2"
+        className="absolute z-0 w-full h-full object-cover"
       >
         <source
-          src={video} // Asegúrate de que esta ruta sea correcta
+          src={video}
           type="video/mp4"
         />
       </video>
@@ -23,3 +23,4 @@ const VideoHeader: React.FC = () => {
 };
 
 export default VideoHeader;
+
