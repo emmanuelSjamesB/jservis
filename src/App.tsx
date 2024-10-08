@@ -10,6 +10,7 @@ import GaleriaCmd from './components/GaleriaCmd';
 
 import Formulario from './components/Formulario';
 import SocialBar from './components/SocialBar';
+import Footer from './components/Footer';
 
 
 
@@ -18,12 +19,13 @@ const App: React.FC = () => {
     <>      
       <Navbar />
       <VideoHeader />
-      <Header />                  
-      <ServicesSection />      
+      <Header />   
+      <SocialBar />               
+      <ServicesSection />  
       <AboutSection /> 
       <GaleriaCmd />     
       <Formulario />
-      <SocialBar /> 
+      <Footer /> 
       
          
     </>
