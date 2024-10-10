@@ -1,25 +1,44 @@
 import React from 'react';
 
 const generateColumns = () => {
-  const columns = [];
-  for (let n = 1; n <= 80; n++) {
-    const rows = [];
-    for (let i = 1; i <= 50; i++) {
-      const value = Math.random() > 0.5 ? '1' : '0';
-      rows.push(<span key={i} style={{ animationDuration: `${Math.random() * 4 + 1}s`, animationDelay: `${i * 0.02}s` }}>{value}</span>);
-    }
-    columns.push(<div key={n} className={`column col-${n}`}>{rows}</div>);
-  }
-  return columns;
+  const numColumns = 80;
+  const numRows = 10;
+
+  return Array.from({ length: numColumns }, (_, n) => (
+    <div key={n} className="column flex flex-col items-center">
+      {Array.from({ length: numRows }, (_, i) => {
+        const value = Math.random() > 0.5 ? '1' : '0';
+        return (
+          <span
+            key={i}
+            className={`text-green-500 text-lg animate-pulse transition-all duration-1000 delay-[${i * 20}ms]`}
+            style={{
+              animationDuration: `${Math.random() * 4 + 1}s`,
+            }}
+          >
+            {value}
+          </span>
+        );
+      })}
+    </div>
+  ));
 };
 
 const CodeMatrix: React.FC = () => {
-    return (
-
-<div className="codematrix wrapper column ">
+  return (
+    <div className="codematrix flex justify-center items-center min-h-screen w-full bg-black relative">
+      <div className="absolute text-green-300 text-center uppercase font-bold 
+                      text-4xl sm:text-5xl md:text-6xl lg:text-7xl w-full">
+        REPARACION Y MANTENIMIENTO
+      </div>
+      <div className="flex space-x-1 z-0 w-full">
         {generateColumns()}
       </div>
-       );
-    };
-    
+    </div>
+  );
+};
+
 export default CodeMatrix;
+
+
+
